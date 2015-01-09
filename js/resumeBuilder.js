@@ -1,21 +1,25 @@
 var skills=["Nice","Awesome","Cool"]
 var age="44";
 var picURL="http://media-cache-ak0.pinimg.com/236x/49/fc/d9/49fcd990853426d8f67867bec2900cee.jpg";
-var welcomeMSG="Hello!, I'm Nick!"
+var welcomeMSG="Hello!, I'm Nick!";
+var mobilePhone="123-123-1234";
+var role="DAC Dev";
+var fname="Nick";
+var email="nick123@somewhere.someplace";
 
-var formattedName=HTMLheaderName.replace("%data%","Nick")
-var formattedRole=HTMLheaderRole.replace("%data%","DAC Developer!")
+var formattedName=HTMLheaderName.replace("%data%",fname);
+var formattedRole=HTMLheaderRole.replace("%data%",role);
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 
 
 
 var bio ={
-	"name":"Nick",
-	"role":"DAC Developer!",
+	"name":fname,
+	"role":role,
 	"contacts":{
-		"mobile":"123-222-3333",
-		"email":"nick123"
+		"mobile":mobilePhone,
+		"email":email
 		},
 	"pic":picURL,
 	"welcome":welcomeMSG,
